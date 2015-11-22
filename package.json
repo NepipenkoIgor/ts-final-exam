@@ -1,0 +1,15 @@
+{
+  "name": "final-typescript-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "painters.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Nepipenko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.13.3",
+    "mocha": "2.3.4"
+  }
+}

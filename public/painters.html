@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="styles/app.css" type="text/css"/>
+    <link href="styles/app.css" rel="stylesheet"/>
+    <script src="scripts/bundle.js"></script>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-1">
+        <img class="logoImg" src="images/brush.png"/>
+    </div>
+    <div class="col-md-11 pull-left">
+        <h1>Famous Painters</h1>
+    </div>
+</div>
+<select id="paintersList">
+    <option disabled>Choose a painter. . .</option>
+</select>
+<div lass="row">
+    <div class="col-md-11 pull-left">
+        <h3>Styles:</h3>
+        <span id="painterStyle"></span>
+    </div>
+</div>
+<div lass="row">
+    <div class="col-md-11 pull-left">
+        <h3>Examples:</h3>
+        <ul id="examplesList">
+
+        </ul>
+    </div>
+</div>
+
+<div id="content"></div>
+</body>
+</html>
