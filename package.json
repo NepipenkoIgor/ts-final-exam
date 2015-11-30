@@ -2,14 +2,18 @@
   "name": "final-typescript-project",
   "version": "1.0.0",
   "description": "",
-  "main": "painters.html",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/typescript/bin/tsc ./tests/**.spec.ts --module commonjs && ./node_modules/mocha/bin/mocha -R nyan tests/**.spec.js",
+    "webpack":"./node_modules/typescript/bin/tsc ./public/scripts/**.ts --module commonjs && ./node_modules/webpack/bin/webpack.js",
+    "start":"./node_modules/typescript/bin/tsc ./app.ts --module commonjs && node app"
   },
   "author": "Igor Nepipenko",
   "license": "ISC",
   "dependencies": {
     "express": "4.13.3",
-    "mocha": "2.3.4"
+    "mocha": "2.3.4",
+    "typescript": "1.6.2",
+    "webpack": "1.12.8"
   }
 }
